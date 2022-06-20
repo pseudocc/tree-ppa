@@ -1,0 +1,29 @@
+Canonical take home test
+Index: tree-ppa/Makefile
+===================================================================
+--- tree-ppa.orig/Makefile
++++ tree-ppa/Makefile
+@@ -23,6 +23,7 @@ INSTALL=install
+ 
+ VERSION=2.0.2
+ TREE_DEST=tree
++TESTING_SH=testing.sh
+ DESTDIR=${PREFIX}/bin
+ MAN=tree.1
+ # Probably needs to be ${PREFIX}/share/man for most systems now
+@@ -106,6 +107,7 @@ install: tree
+ 	$(INSTALL) -d $(DESTDIR)
+ 	$(INSTALL) -d $(MANDIR)/man1
+ 	$(INSTALL) $(TREE_DEST) $(DESTDIR)/$(TREE_DEST); \
++	$(INSTALL) $(TESTING_SH) $(DESTDIR)/$(TESTING_SH); \
+ 	$(INSTALL) -m 644 doc/$(MAN) $(MANDIR)/man1/$(MAN)
+ 
+ distclean:
+Index: tree-ppa/testing.sh
+===================================================================
+--- /dev/null
++++ tree-ppa/testing.sh
+@@ -0,0 +1,3 @@
++#/bin/sh
++echo "this is a test from Yu Ze"
++

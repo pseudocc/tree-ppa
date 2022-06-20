@@ -23,7 +23,6 @@ INSTALL=install
 
 VERSION=2.0.2
 TREE_DEST=tree
-TESTING_SH=testing.sh
 DESTDIR=${PREFIX}/bin
 MAN=tree.1
 # Probably needs to be ${PREFIX}/share/man for most systems now
@@ -107,7 +106,6 @@ install: tree
 	$(INSTALL) -d $(DESTDIR)
 	$(INSTALL) -d $(MANDIR)/man1
 	$(INSTALL) $(TREE_DEST) $(DESTDIR)/$(TREE_DEST); \
-	$(INSTALL) $(TESTING_SH) $(DESTDIR)/$(TESTING_SH); \
 	$(INSTALL) -m 644 doc/$(MAN) $(MANDIR)/man1/$(MAN)
 
 distclean:
