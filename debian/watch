@@ -1,0 +1,3 @@
+version=4
+http://mama.indstate.edu/users/ice/@PACKAGE@/src/ \
+    @PACKAGE@@ANY_VERSION@@ARCHIVE_EXT@
