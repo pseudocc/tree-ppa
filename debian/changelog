@@ -1,3 +1,9 @@
+tree (2.0.2-yuze2) jammy; urgency=medium
+
+  * fix missing slash in shebang
+
+ -- Yu Ze <pseudoc@163.com>  Tue, 21 Jun 2022 01:54:04 +0800
+
 tree (2.0.2-yuze1) jammy; urgency=medium
 
   * take home test
